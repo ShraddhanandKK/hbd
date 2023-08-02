@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  align-items:center;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 400px;
+  perspective: 1000px;
+  align-items:center;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  align-items:center;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  align-items:center;
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  align-items:center;
+}
+
+.flip-card-front {
+  background-color: purple;
+  color: black;
+  align-items:center;
+}
+
+.flip-card-back {
+  background-color: black;
+  color: white;
+  transform: rotateY(180deg);
+  align-items:center;
+
+</style>
+</head>
+<body>
+
+<h1>Card Flip with Text</h1>
+<h3>Hover over the image below:</h3>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="hbd61.png" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>John Doe</h1> 
+      <p>Architect & Engineer</p> 
+      <p>!! मम्मीचा video call !!
+        ❣️😍ठिक साडे आठ वाजता (8:30pm) आला मम्मीचा video call पहीला म्हणाली मी दिसते आहे का बाळ 😀 आणि तिला बघून खुप नाही, पन थोडा झालाच होता काळ . तिच्या चेहऱ्यावरचे  पाहूनी  हास्य 😁 वाटावे की मी जिंकले असावे  Olympic चे कास्य .
+        तिने विचारले बाळा जेवलास काय, म्हणालो मी अजुन तर नाय. ती म्हणाली कसा होता आजचा पेपर , मी म्हणालो पेपर होता चांगला पन नाही या वेळी टॉपर ! . चालला call खुप वेळ, पन थांबत नव्हता आमचा हासण्याचा खेळ.असलो जरी थोडा दुर मी आहे तिथेच मी , कीतीही जग फिरलो तरी परतून येणार आहे मी.❣️</p>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
